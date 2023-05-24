@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wagner Silva</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html" class="main-header-link">
+            <img src="assets/profile.jpeg" alt="imagem perfil" />
+        </a>
+        <ul class="ul-icons">
+            <li><a class="icon-a" href="https://github.com/wagnerSfarias" target="_blank">
+                    <i class="fab fa-github"></i></a>
+            </li>
+            <li><a class="icon-a" href="mailto:wagner@universalhost.com.br">
+                    <i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li><a class="icon-a" href="https://www.linkedin.com/in/wagner-silva-dev/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main-content">
+        <section>
+            <nav id="header">
+                <ul class="ul-header">
+                    <li class="li-header"><a href="#">Inicio</a></li>
+                    <li class="li-header"><a href="#about">Sobre</a></li>
+                    <li class="li-header"><a href="#skill">Habilidades</a></li>
+                    <li class="li-header"><a href="#projects">Projetos</a></li>
+                </ul>
+
+                <button id='btn' class="header-icon" onmouseenter="moveEnter()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+
+            <nav id="header">
+                <ul class="ul-header-mobile">
+                    <li class="li-header-mobile"><a href="#">Inicio</a></li>
+                    <li class="li-header-mobile"><a href="#about">Sobre</a></li>
+                    <li class="li-header-mobile"><a href="#skill">Habilidades</a></li>
+                    <li class="li-header-mobile"><a href="#projects">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="presentation">
+                <h2>Olá, eu sou o</h2>
+                <p class="name">Wagner Silva </p>
+                <h3>Desenvolvedor Front-end</h3>
+            </div>
+
+            <img class="logo" src="./assets/techs.png" alt="logo-tech" />
+        </section>
+
+        <section id="about">
+            <div class="border-title">
+                <div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <h2 class="title-about">Sobre</h2>
+            </div>
+
+            <p class="about-p">Meu nome é Wagner Silva, moro na cidade de São Paulo, profissional na área de tecnologia como auxiliar técnico de informática em transição de
+                carreira para programação.<br>
+                Graduado em análise e desenvolvimento de sistema na Universidade Paulista UNIP, estou em 
+                busca da primeira oportunidade no mercado como desenvolvedor.
+                Em constante aprendizado e evolução criando projetos, colocando em prática ao máximo meus conhecimentos.
+            </p>
+
+            <img class="my-img-home" src="assets/profile.jpeg" alt="imagem perfil" />
+
+            <div class="border-title" id="skill">
+                <div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <h2 class="title-about">Habilidades</h2>
+            </div>
+
+            <div class="container-skills">
+                <button id="btn-left"><i class="fa-solid fa-arrow-left"></i></button>
+
+                <div id="skills">
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                        </li>
+                        <li><i class="fa-brands fa-css3"></i>
+                            <p>CSS</p>
+                        </li>
+                        <li><i class="fa-brands fa-js"></i>
+                            <p>JavaScript</p>
+                        </li>
+                        <li><i class="fa-brands fa-react"></i>
+                            <p>React</p>
+                        </li>
+                        <li><i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-apple"></i>
+                            <p>React Native</p>
+                        </li>
+                        <li><img src="./assets/firebase.svg" alt="icon-firebase" />
+                            <p>Firebase</p>
+                        </li>
+                        <li><img src="./assets/styled-components.svg" alt="icon-styled-components" />
+                            <p>Styled-Components</p>
+                        </li>
+                        <li><i class="fa-brands fa-node"></i>
+                            <p>NodeJS</p>
+                        </li>
+                        <li><i class="fa-solid fa-database"></i>
+                            <p>SQL</p>
+                        </li>
+                        <li><img src="./assets/c.svg" alt="icon-c#" />
+                            <p>C#</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <button id="btn-right"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="border-title">
+                <div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <h2 class="title-about">Projetos</h2>
+            </div>
+
+            <div class="row"></div>
+
+        </section>
+
+        <footer class="contacts">
+            <ul class="ul-icons">
+                <li><a class="icon-a" href="https://github.com/wagnerSfarias" target="_blank">
+                        <i class="fab fa-github"></i></a>
+                </li>
+                <li><a class="icon-a" href="mailto:wagner@universalhost.com.br">
+                        <i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li><a class="icon-a" href="https://www.linkedin.com/in/wagner-silva-dev/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+<script src="./loadProjects.js"></script>
+<script src="./main.js"></script>
+
+</html>
