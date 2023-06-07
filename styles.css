@@ -5,11 +5,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: #232630;
     color: #C1C1C1;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -443,7 +446,7 @@ h3 {
 
 }
 
-.fa-git-alt{
+.fa-git-alt {
     color: #E84D31;
 }
 
@@ -810,7 +813,7 @@ h3 {
     #btn-right {
         display: none;
     }
- 
+
     .icons-description ul {
         gap: 4px;
         margin-bottom: 5px;
