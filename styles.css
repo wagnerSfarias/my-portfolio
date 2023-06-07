@@ -443,6 +443,10 @@ h3 {
 
 }
 
+.fa-git-alt{
+    color: #E84D31;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
