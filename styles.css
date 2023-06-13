@@ -277,13 +277,8 @@ h3 {
     margin-top: 18%;
 }
 
-#skills .fa-apple {
-    font-size: 55px;
-}
-
-#skills .fa-android {
-    font-size: 50px;
-    margin-right: -5px;
+#skills .fa-apple, #skills .fa-android {
+    font-size: 30px;
 }
 
 #btn-left,
@@ -435,15 +430,8 @@ h3 {
     color: #8BBF3D;
 }
 
-.fa-android {
-    color: #8BBF3D;
-    font-size: 25px;
-}
-
-.fa-apple {
-    color: #ffffff;
-    font-size: 25px;
-
+.fa-android, .fa-apple{
+    color: #5ED3F3;
 }
 
 .fa-git-alt {
@@ -799,14 +787,8 @@ h3 {
         width: 35px;
         margin: 0;
     }
-
-    #skills .fa-apple {
-        font-size: 35px;
-    }
-
-    #skills .fa-android {
-        font-size: 35px;
-        margin-right: -5px;
+    #skills .fa-apple, #skills .fa-android {
+        font-size: 20px;
     }
 
     #btn-left,
