@@ -3,7 +3,6 @@ async function loadData() {
 
     let data = await fetch(
         "https://api-projects-one.vercel.app/projects"
-        // "http://localhost:3000/projects"
     ).then(response =>  response.json())
 
     loadProjects(data);
