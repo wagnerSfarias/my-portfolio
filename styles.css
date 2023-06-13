@@ -184,7 +184,8 @@ h3 {
 }
 
 .about-p {
-    line-height: 30px;
+    line-height: 35px;
+    word-spacing: 2px;
     text-align: center;
     width: 84%;
     margin: 5% auto 15%;
