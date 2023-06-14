@@ -112,6 +112,9 @@ section:first-child {
 .li-header a:hover {
     color: #0F94A7;
 }
+.li-header:active{
+    opacity: 0.4;
+}
 
 .header-icon {
     background-color: #0F94A7;
@@ -130,7 +133,9 @@ section:first-child {
     padding: 10px;
     color: #232630;
 }
-
+.header-icon:active{
+    opacity: 0.4;
+}
 .presentation {
     margin: 20% auto;
     width: 70%;
@@ -293,6 +298,10 @@ h3 {
     border: 0;
     background-color: transparent;
     box-shadow: 0px 6px 10px 1px #858484;
+}
+
+#btn-left:active, #btn-right:active{
+    opacity: 0.5;
 }
 
 .row {
