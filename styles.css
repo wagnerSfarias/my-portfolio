@@ -209,7 +209,6 @@ h3 {
     width: 130%;
 }
 
-
 .color {
     height: 4px;
 }
@@ -394,6 +393,21 @@ h3 {
 }
 
 .contacts {
+    /* display: none; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 65%;
+        height: 50px;
+        background-color: #3A3D46;
+        border-top: 2px solid #0F94A7;
+        font-size: 18px;
+        /* padding-top: 5px; */
+}
+
+.contacts .ul-icons{
     display: none;
 }
 
@@ -433,6 +447,7 @@ h3 {
 
 .fa-android, .fa-apple{
     color: #5ED3F3;
+    font-size: 20px;
 }
 
 .fa-git-alt {
@@ -657,18 +672,34 @@ h3 {
     }
 
     .contacts {
-        display: flex;
-        position: absolute;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: none;
+        /* position: absolute; */
         width: 100%;
-        background-color: #3A3D46;
-        border-top: 2px solid #0F94A7;
+        height:auto;
+        /* background-color: #3A3D46; */
+        /* border-top: 2px solid #0F94A7; */
+        font-size: 16px;
     }
-
-    .ul-icons {
+    .contacts .ul-icons{
+        display: flex;
         position: relative;
         gap: 30px;
         margin: 3% 0;
+        /* border: 1px solid #FFF; */
     }
+    .contacts p{
+        padding-bottom: 15px; /* conferir no celular*/
+        /* display: none; */
+    }
+
+    /* .ul-icons {
+        position: relative;
+        gap: 30px;
+        margin: 3% 0;
+    } */
 
     .ul-icons li:hover {
         transform: none;
@@ -738,6 +769,10 @@ h3 {
 
     .ul-banner-main i {
         font-size: 20px;
+    }
+    .ul-banner-main .fa-android,
+    .ul-banner-main .fa-apple {
+        font-size: 15px;
     }
 
     .ul-banner-main img {
