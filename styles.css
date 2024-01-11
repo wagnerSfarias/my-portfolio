@@ -316,7 +316,6 @@ h3 {
     width: 90%;
     margin: 10px auto;
     cursor: pointer;
-
 }
 
 .banner-main img {
@@ -463,6 +462,10 @@ h3 {
     color: #E84D31;
 }
 
+.fa-sass {
+    color: #C6538C;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -484,11 +487,11 @@ h3 {
 
 @keyframes closeDescription {
     from {
-        transform: translateY(-200px) 
+        transform: translateY(-230px) 
     }
 
     to {
-        transform: translateY(-200px) scale(0.1);
+        transform: translateY(-230px) scale(0);
     }
 }
 
@@ -604,6 +607,16 @@ h3 {
 }
 
 @media screen and (max-width:800px) {
+    
+    @keyframes closeDescription {
+        from {
+            transform: translateY(-180px) 
+        }
+    
+        to {
+            transform: translateY(-180px) scale(0);
+        }
+    }
    
     .li-header {
         padding: 0 10px;
@@ -655,6 +668,17 @@ h3 {
 }
 
 @media screen and (max-width:650px) {
+
+    @keyframes closeDescription {
+        from {
+            transform: translateY(-200px) 
+        }
+    
+        to {
+            transform: translateY(-200px) scale(0);
+        }
+    }
+   
     .main-header {
         display: none;
     }
@@ -713,7 +737,17 @@ h3 {
 }
 
 @media screen and (max-width:480px) {
-
+  
+    @keyframes closeDescription {
+        from {
+            transform: translateY(-140px) 
+        }
+    
+        to {
+            transform: translateY(-140px) scale(0);
+        }
+    }
+   
     .logo {
         width: 80%;
         position: relative;
@@ -754,9 +788,6 @@ h3 {
     .row {
         padding-bottom: 100px;
         grid-auto-rows: 160px;
-    }
-    .description {
-        height: 230px;
     }
 
     .ul-banner-main {

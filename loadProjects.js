@@ -18,7 +18,7 @@ function loadProjects(dados) {
     return `
     <div class="container-project" id="box${index}" onclick="btnDescription(id)" onmouseenter="enterDescription(id)" onmouseleave="outDescription(id)">
          <div class="banner-main">
-            <img src="${data.urlImage}" alt="image project" class="banner-main-img"/>
+            <img src="${data.urlImage}" alt="imagem projeto" class="banner-main-img"/>
              <ul class="ul-banner-main">
               ${data.icons.map((icon) => {
             return `${icon === 'firebase' || icon === 'styled-components' ? `
@@ -110,9 +110,11 @@ function enterDescription(id) {
     const res = checkDevice()
     if (!res) {
        
-        description.style.display = "block";
-        main.style.display = 'none';
-        description.style.animation = "openDescription 500ms ease-in";
+        setTimeout(() => {
+            description.style.display = "block";
+            main.style.display = 'none';
+            description.style.animation = "openDescription 500ms linear";
+        }, 400)
     }
 }
 
@@ -122,7 +124,7 @@ function outDescription(id) {
     const main = document.querySelector(`#${id} .banner-main`);
 
     main.style.display = 'flex';
-    description.style.animation = "closeDescription 500ms ease-out";
+    description.style.animation = "closeDescription 500ms linear";
 
     setTimeout(() => {
         description.style.display = 'none';
