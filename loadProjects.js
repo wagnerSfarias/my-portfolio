@@ -10,7 +10,9 @@ async function loadData() {
 
 
 function loadProjects(dados) {
-
+    
+    const svgs =['firebase', 'styled-components', 'database', 'docker', 'material']
+   
     const containerProject = document.querySelector('.row');
 
     const contentHtml = dados.map((data, index) => {
@@ -19,13 +21,13 @@ function loadProjects(dados) {
     <div class="container-project" id="box${index}" onclick="btnDescription(id)" onmouseenter="enterDescription(id)" onmouseleave="outDescription(id)">
          <div class="banner-main">
             <img src="${data.urlImage}" alt="imagem projeto" class="banner-main-img"/>
-             <ul class="ul-banner-main">
-              ${data.icons.map((icon) => {
-            return `${icon === 'firebase' || icon === 'styled-components' ? `
-                <li><img src="./assets/${icon}.svg" alt="icon-svg"/></li>` :
-                `<li><i class="fa-brands ${icon}"></i></li>`} `
-                 }).join('')}
-            </ul>
+            <ul class="ul-banner-main">
+            ${data.icons.map((icon) => {
+                return `${svgs.includes(icon) ? `
+                    <li><img src="./assets/${icon}.svg" alt="icon-svg"/></li>` :
+                    `<li><i class="fa-brands ${icon}"></i></li>`} `
+                     }).join('')}
+                     </ul>
         </div>
         <div class="description">
             <h2>${data.title}</h2>
@@ -36,7 +38,7 @@ function loadProjects(dados) {
                 ${data.tech.map((icon) => {
             return `${`<li>${icon}</li>`}`
                     })}
-             </ul>
+             .</ul>
              <div class="links">
 
                 ${data.urlDeploy != '' ? `
