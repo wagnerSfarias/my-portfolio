@@ -11,7 +11,7 @@ async function loadData() {
 
 function loadProjects(dados) {
     
-    const svgs =['firebase', 'styled-components', 'database', 'docker', 'material']
+    const svgs =['firebase', 'styled-components', 'database', 'docker', 'material','mongo', 'postgre', 'typescript']
    
     const containerProject = document.querySelector('.row');
 
