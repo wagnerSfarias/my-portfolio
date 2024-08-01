@@ -8,11 +8,11 @@ const rigth = document.getElementById("btn-right");
 const left = document.getElementById("btn-left");
 
 rigth.onclick = () => {
-    document.getElementById("skills").scrollLeft += 60;
+    document.getElementById("skills").scrollLeft += 100;
 }
 
 left.onclick = () => {
-    document.getElementById("skills").scrollLeft -= 60;
+    document.getElementById("skills").scrollLeft -= 100;
 }
 
 function verifyStyles(data) {
